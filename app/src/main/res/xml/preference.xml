@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fragment="com.h4x0r.h4x0r.MyPreferenceFragment">
+
+    <PreferenceCategory
+        android:title="Options()">
+        <ListPreference     android:title="Difficulty"
+            android:summary="Select the level of difficulty requested"
+            android:key="difficulty"
+            android:defaultValue="10"
+            android:entries="@array/diffList"
+            android:entryValues="@array/diffValues" />
+        <ListPreference     android:title="Music"
+            android:summary="Select the Music File requested"
+            android:key="music"
+            android:defaultValue="000 (file1.mp3)"
+            android:entries="@array/musicList"
+            android:entryValues="@array/musicValues" />
+        <ListPreference     android:title="Volume"
+            android:summary="Select the Volume level requested"
+            android:key="volume"
+            android:defaultValue="100%"
+            android:entries="@array/volumeList"
+            android:entryValues="@array/volumeValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style=""
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:screenOrientation="portrait"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/gameText" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreQtytxt"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="@string/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/scoreQtytxt"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_bright"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/gridTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="clickHandlerCell"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TableLayout>
+
+    <TextView
+        android:background="@color/black_overlay"
+        android:text="YOU WIN!!! \n Play again?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/victoryTxt"
+        android:fontFamily="sans-serif"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/game_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/BtnLayout">
+
+        <Button
+            android:visibility="visible"
+            android:text="@string/newLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRestart"
+            android:onClick="Restart"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="RelativeOverlap" />
+
+        <Button
+            android:visibility="visible"
+            android:text="@string/quit"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:onClick="Quit"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

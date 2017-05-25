@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="custom_showcase_width">48dip</dimen>
+    <dimen name="custom_showcase_height">24dip</dimen>
+    <dimen name="showcase_radius">22dp</dimen>
+    <dimen name="showcase_radius_inner">8dp</dimen>
+    <dimen name="showcase_radius_outer">10dp</dimen>
+    <dimen name="showcase_radius_material">9dp</dimen>
+</resources>

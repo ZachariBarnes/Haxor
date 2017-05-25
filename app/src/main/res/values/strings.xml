@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">H4X0R</string>
+
+    <string name="title_activity_game">GameActivity</string>
+    <string name="quit">Quit</string>
+    <string name="newLevel">New Level</string>
+    <string name="score">Score:</string>
+    <!--TEST!-->
+    <string name="menu_Banner_ad_unit_id">ca-app-pub-1337898371561744/3289650518</string>
+    <string name="game_ad_unit_id">ca-app-pub-1337898371561744/6805716514</string>
+    <string name="menu_native_ad_unit_id">ca-app-pub-1337898371561744/6666115719</string>
+    <string name="Victory">Congratulations!\nYOU WIN!!! \nPlay again?</string>
+    <string name="Loss">You Lost... \nTry Again?</string>
+    <string name="TutVictory">Congratulations!\nYOU WIN!!! \nYou\'ve Beaten the Tutorial</string>
+
+</resources>

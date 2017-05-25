@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diffList">
+        <item>Hard()</item>
+        <item>Medium()</item>
+        <item>Easy()</item>
+    </string-array>
+
+    <string-array name="diffValues">
+        <item>15</item>
+        <item>10</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="musicList">
+        <item>000 (file1.mp3)</item>
+        <item>010 (file2.mp3)</item>
+        <item>101 (file3.mp3)</item>
+    </string-array>
+
+    <string-array name="musicValues">
+        <item>000</item>
+        <item>010</item>
+        <item>101</item>
+    </string-array>
+    <string-array name="volumeValues" >
+        <item>100</item>
+        <item>75</item>
+        <item>50</item>
+        <item>25</item>
+        <item>0</item>
+        <item>-5</item>
+        <item>-10</item>
+    </string-array>
+    <string-array name="volumeList" >
+        <item>100%</item>
+        <item>75%</item>
+        <item>50%</item>
+        <item>25%</item>
+        <item>0% (muted)</item>
+        <item>Mute Music Only</item>
+        <item>Mute Sound Effects Only</item>
+</string-array>
+</resources>
